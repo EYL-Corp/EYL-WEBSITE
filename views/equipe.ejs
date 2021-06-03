@@ -14,37 +14,39 @@
     <link href="css/equipe.css" rel="stylesheet">
     <%- include('layouts/nav') %>
   </head>
-
   <body>
-  <div class="global-card">
-  <div class="card">
-    <img class ="cardimg" src="images/lucien.jpeg" alt="Avatar" style="width:100%">
-    <div class="text">
-      <h4><b>Lucien Carneiro</b></h4>
-      <p>DT</p>
-      <p>Co-Fondateur EYL</p>
+    <img src="images/equipe.png" class="staff">
+    <div class="team">
+      <div class="face"
+           style="background: url(images/nolann.jpeg)
+           center/cover">
+      </div>
+      <div class="face"
+           style="background: url(images/lucien.jpeg)
+           center/cover">
+      </div>
+      <div class="face active"
+           style="background: url(images/enzo.jpeg)
+           center/cover">
+      </div>
+      <div class="face"
+           style="background: url(images/yannick.jpeg)
+           center/cover">
+      </div>
+      <div class="face"
+           style="background: url(images/ahmed.jpeg)
+           center/cover">
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img class ="cardimg" src="images/enzo.jpeg" alt="Avatar" style="width:100%">
-    <div class="text">
-      <h4><b>Enzo De Carvalho</b></h4>
-      <p>PDG</p>
-      <p>Co-Fondateur EYL</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class ="cardimg" src="images/yannick.jpeg" alt="Avatar" style="width:100%">
-    <div class="text">
-      <h4><b>Yannick Ferrard</b></h4>
-      <p>DG</p>
-      <p>Co-Fondateur EYL</p>
-    </div>
-  </div>
-  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(".face").click(function() {
+        $(".face").removeClass("active");
+        $(this).addClass("active");
+      })
+    </script>
   </body>
   <footer>
     <%- include('footer') %>
   </footer>
-
 </html>
