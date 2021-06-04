@@ -81,8 +81,9 @@
 
 .portfolio_paragraph {
   float: right;
-  margin-left: -15%;
-  color: #5688c6;
+  margin-top: -15%;
+  margin-right: 15%;
+  color: black;
   text-align: center;
 }
 
@@ -137,4 +138,56 @@
   display: flex;
   text-align: center;
   margin: auto;
+}
+
+.slidershow {
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 450px;
+  height: 340px;
+  overflow: hidden;
+}
+
+.middle {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-0%, -0%);
+}
+
+.navgat {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bargat {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.bargat:hover {
+  background: #FFF;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -94%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -188%;
 }
