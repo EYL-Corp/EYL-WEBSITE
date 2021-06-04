@@ -191,3 +191,8 @@ input[name="r"] {
 #r3:checked ~ .s1 {
   margin-left: -188%;
 }
+
+.center_icon {
+  display: block;
+  text-align: center;
+}
