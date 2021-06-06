@@ -196,3 +196,44 @@ input[name="r"] {
   display: block;
   text-align: center;
 }
+
+.box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.icon {
+  width: 120px;
+  display: inline-block;
+}
+
+.icon span {
+  opacity: 0;
+}
+
+.icon:hover > span {
+  opacity: 1;
+}
+
+.info-techno {
+  color: white;
+  position: relative;
+  background: #000000;
+  border-radius: .4em;
+  padding: 10px;
+}
+
+.info-techno:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #000000;
+  border-top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}
