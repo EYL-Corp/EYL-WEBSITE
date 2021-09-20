@@ -1,0 +1,21 @@
+---
+- name: EYLcorp website
+  hosts: web
+  become: yes
+  become_user: root
+  remote_user: debian
+
+  tasks:
+    - name: APT update && APT upgrade
+      apt: update_cache=yes upgrade=yes
+    - name: GIT pull
+      command: chdir=/var/www/eylcorp.com git pull origin master
+    - name: NPM install
+      command: chdir=/var/www/eylcorp.com npm install
+    - name: DOCKER restart
+      command: chdir=/var/www/eylcorp.com systemctl restart docker
+    - name: DOCKER build
+      command: chdir=/var/www/eylcorp.com docker build --tag node-docker .
+    - name: DOCKER run
+      command: chdir=/var/www/eylcorp.com docker run -d -p 3000:3000 node-docker
+...
