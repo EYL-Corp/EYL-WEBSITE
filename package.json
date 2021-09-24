@@ -1,29 +1,29 @@
 {
-  "name": "eylcorp",
-  "version": "1.0.0",
-  "description": "eylcorp software",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ozenski1/EYLCORP.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ozenski1/EYLCORP/issues"
-  },
-  "homepage": "https://github.com/Ozenski1/EYLCORP#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "jquery": "^3.6.0",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.5.0",
-    "nodemon": "^2.0.7"
-  }
+    "name": "eylcorp",
+    "version": "1.0.0",
+    "description": "eylcorp software",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ozenski1/EYLCORP.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ozenski1/EYLCORP/issues"
+    },
+    "homepage": "https://github.com/Ozenski1/EYLCORP#readme",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "jquery": "^3.6.0",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.5.0",
+        "nodemon": "^2.0.13"
+    }
 }
