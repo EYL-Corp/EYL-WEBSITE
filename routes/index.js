@@ -9,10 +9,6 @@ router.get('/home', (req, res) => {
     res.render('home');
 })
 
-router.get('/tarifs', (req, res) => {
-    res.render('tarifs');
-})
-
 router.get('/contact', (req, res) => {
     res.render('contact');
 })
@@ -20,7 +16,5 @@ router.get('/contact', (req, res) => {
 router.get('/equipe', (req, res) => {
     res.render('equipe');
 })
-
-
 
 module.exports = router;

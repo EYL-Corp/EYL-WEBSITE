@@ -18,7 +18,8 @@
 
 #button {
   margin-top: 10%;
-  background-color: black;
+  color: black;
+  background-color: white;
   border-color: black;
   padding-left: 10%;
   padding-right: 10%;
@@ -54,6 +55,11 @@
 #title_p {
   font-weight: bold;
   color: white;
+}
+
+#cover {
+  color: white;
+  background-color: #212529;
 }
 
 .eyl_logo {
