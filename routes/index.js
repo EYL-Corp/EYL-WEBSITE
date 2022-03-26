@@ -5,6 +5,10 @@ router.get('/', (req, res) => {
     res.render('index');
 })
 
+router.get('/nav', (req, res) => {
+    res.render('nav');
+})
+
 router.get('/home', (req, res) => {
     res.render('home');
 })

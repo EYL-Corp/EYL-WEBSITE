@@ -7,3 +7,15 @@
     transform: translateY(-50%);
     margin-top: 300px;
 }
+
+
+footer{
+    background-color: #f1f1f1;
+    padding: 25px;
+    text-align: center;
+    margin-top: 200px;  
+}
+
+.nav-link accueil{
+    color:black;
+}
