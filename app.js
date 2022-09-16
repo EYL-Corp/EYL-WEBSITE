@@ -24,4 +24,4 @@ module.exports = app;
 app.listen(port)
 
 
-console.log("bienvenue sur le port : www.localhost:3000", port);
+console.log("bienvenue sur le port : 3000", port);
